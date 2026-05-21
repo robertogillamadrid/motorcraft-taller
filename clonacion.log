@@ -1,0 +1,76 @@
+2026-05-21 02:09:49  INFO      ══════════════════════════════════════════════════
+2026-05-21 02:09:49  INFO        MotorCraft — Clonación MySQL → MongoDB
+2026-05-21 02:09:49  INFO        2026-05-21 02:09:49
+2026-05-21 02:09:49  INFO      ══════════════════════════════════════════════════
+2026-05-21 02:09:50  INFO      package: mysql.connector.plugins
+2026-05-21 02:09:50  INFO      plugin_name: caching_sha2_password
+2026-05-21 02:09:50  INFO      AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-05-21 02:09:50  ERROR     ✗ MySQL — 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-05-21 02:15:02  INFO      ══════════════════════════════════════════════════
+2026-05-21 02:15:02  INFO        MotorCraft — Clonación MySQL → MongoDB
+2026-05-21 02:15:02  INFO        2026-05-21 02:15:02
+2026-05-21 02:15:02  INFO      ══════════════════════════════════════════════════
+2026-05-21 02:15:02  INFO      package: mysql.connector.plugins
+2026-05-21 02:15:02  INFO      plugin_name: caching_sha2_password
+2026-05-21 02:15:02  INFO      AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-05-21 02:15:02  ERROR     ✗ MySQL — 1049 (42000): Unknown database 'db_motorcraft'
+2026-05-21 02:16:29  INFO      ══════════════════════════════════════════════════
+2026-05-21 02:16:29  INFO        MotorCraft — Clonación MySQL → MongoDB
+2026-05-21 02:16:29  INFO        2026-05-21 02:16:29
+2026-05-21 02:16:29  INFO      ══════════════════════════════════════════════════
+2026-05-21 02:16:29  INFO      package: mysql.connector.plugins
+2026-05-21 02:16:29  INFO      plugin_name: caching_sha2_password
+2026-05-21 02:16:29  INFO      AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-05-21 02:16:29  INFO      ✓ MySQL conectado — base: motorcraft_db
+2026-05-21 02:16:29  INFO      ✓ MongoDB conectado — base: uabcdb
+2026-05-21 02:16:29  INFO      ─── Paso 1: Clonando tablas → colecciones ───
+2026-05-21 02:16:29  INFO        ✓  PUESTOS                         5 docs
+2026-05-21 02:16:29  INFO        ✓  EMPLEADOS                       5 docs
+2026-05-21 02:16:29  INFO        ✓  NOMINA                          5 docs
+2026-05-21 02:16:29  INFO        ✓  CLIENTES                        5 docs
+2026-05-21 02:16:29  INFO        ✓  VEHICULOS                       6 docs
+2026-05-21 02:16:29  INFO        ✓  SERVICIOS                      10 docs
+2026-05-21 02:16:29  INFO        ✓  ORDENES_TRABAJO                 5 docs
+2026-05-21 02:16:29  INFO        ✓  DETALLE_ORDEN                   8 docs
+2026-05-21 02:16:29  INFO        ✓  FACTURAS                        3 docs
+2026-05-21 02:16:29  INFO        ✓  PAGOS                           2 docs
+2026-05-21 02:16:29  INFO        ✓  PROVEEDORES                     3 docs
+2026-05-21 02:16:29  INFO        ✓  COMPRAS                         3 docs
+2026-05-21 02:16:29  INFO        ✓  DETALLE_COMPRA                  6 docs
+2026-05-21 02:16:29  INFO        ✓  ROLES                           4 docs
+2026-05-21 02:16:29  INFO        ✓  USUARIOS                        5 docs
+2026-05-21 02:16:29  WARNING     ⚠  audit_log                    sin datos, se omite.
+2026-05-21 02:16:29  INFO        ✓  AUDIT_LOG                       0 docs
+2026-05-21 02:16:29  INFO        Subtotal espejo: 75 documentos
+2026-05-21 02:16:29  INFO      ─── Paso 2a: Órdenes enriquecidas ───
+2026-05-21 02:16:29  INFO        ✓  ordenes_enriquecidas            5 docs
+2026-05-21 02:16:29  INFO      ─── Paso 2b: Clientes con historial ───
+2026-05-21 02:16:29  INFO        ✓  clientes_historial              5 docs
+2026-05-21 02:16:29  INFO      ─── Paso 2c: Proveedores con compras ───
+2026-05-21 02:16:29  INFO        ✓  proveedores_compras             3 docs
+2026-05-21 02:16:29  INFO      ─── Paso 3: Creando índices ───
+2026-05-21 02:16:30  INFO        ✓  Índices creados
+2026-05-21 02:16:30  INFO      ─── Colecciones en uabcdb ───
+2026-05-21 02:16:30  INFO        clientes                            5 docs
+2026-05-21 02:16:30  INFO        clientes_historial                  5 docs
+2026-05-21 02:16:30  INFO        compras                             3 docs
+2026-05-21 02:16:30  INFO        detalle_compra                      6 docs
+2026-05-21 02:16:30  INFO        detalle_orden                       8 docs
+2026-05-21 02:16:30  INFO        empleados                           5 docs
+2026-05-21 02:16:30  INFO        facturas                            3 docs
+2026-05-21 02:16:30  INFO        nomina                              5 docs
+2026-05-21 02:16:30  INFO        ordenes_enriquecidas                5 docs
+2026-05-21 02:16:30  INFO        ordenes_trabajo                     5 docs
+2026-05-21 02:16:30  INFO        pagos                               2 docs
+2026-05-21 02:16:30  INFO        proveedores                         3 docs
+2026-05-21 02:16:30  INFO        proveedores_compras                 3 docs
+2026-05-21 02:16:30  INFO        puestos                             5 docs
+2026-05-21 02:16:30  INFO        roles                               4 docs
+2026-05-21 02:16:30  INFO        servicios                          10 docs
+2026-05-21 02:16:30  INFO        usuarios                            5 docs
+2026-05-21 02:16:30  INFO        vehiculos                           6 docs
+2026-05-21 02:16:30  INFO        ────────────────────────────────────────────
+2026-05-21 02:16:30  INFO        Total: 88 documentos en 18 colecciones
+2026-05-21 02:16:30  INFO      ══════════════════════════════════════════════════
+2026-05-21 02:16:30  INFO        Completado en 0.82 segundos
+2026-05-21 02:16:30  INFO      ══════════════════════════════════════════════════
