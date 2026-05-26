@@ -74,3 +74,65 @@
 2026-05-21 02:16:30  INFO      ══════════════════════════════════════════════════
 2026-05-21 02:16:30  INFO        Completado en 0.82 segundos
 2026-05-21 02:16:30  INFO      ══════════════════════════════════════════════════
+2026-05-26 08:44:24  INFO      ══════════════════════════════════════════════════
+2026-05-26 08:44:24  INFO        MotorCraft — Clone MySQL → MongoDB
+2026-05-26 08:44:24  INFO        2026-05-26 08:44:24
+2026-05-26 08:44:24  INFO      ══════════════════════════════════════════════════
+2026-05-26 08:44:24  INFO      package: mysql.connector.plugins
+2026-05-26 08:44:24  INFO      plugin_name: caching_sha2_password
+2026-05-26 08:44:24  INFO      AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-05-26 08:44:24  INFO      ✓ MySQL connected — database: motorcraft_db
+2026-05-26 08:44:24  INFO      ✓ MongoDB connected — database: motorcraft_db_mongo
+2026-05-26 08:44:24  INFO      ─── Step 1: Cloning tables → collections ───
+2026-05-26 08:44:24  INFO        ✓  POSITIONS                       5 docs
+2026-05-26 08:44:24  INFO        ✓  EMPLOYEES                       5 docs
+2026-05-26 08:44:24  INFO        ✓  PAYROLL                         5 docs
+2026-05-26 08:44:24  INFO        ✓  CLIENTS                         5 docs
+2026-05-26 08:44:24  INFO        ✓  VEHICLES                        6 docs
+2026-05-26 08:44:24  INFO        ✓  SERVICES                       10 docs
+2026-05-26 08:44:24  INFO        ✓  WORK_ORDERS                     5 docs
+2026-05-26 08:44:24  INFO        ✓  ORDER_DETAILS                   8 docs
+2026-05-26 08:44:24  INFO        ✓  INVOICES                        3 docs
+2026-05-26 08:44:24  INFO        ✓  PAYMENTS                        2 docs
+2026-05-26 08:44:24  INFO        ✓  SUPPLIERS                       3 docs
+2026-05-26 08:44:24  INFO        ✓  PURCHASES                       3 docs
+2026-05-26 08:44:24  INFO        ✓  PURCHASE_DETAILS                6 docs
+2026-05-26 08:44:24  INFO        ✓  ROLES                           4 docs
+2026-05-26 08:44:24  INFO        ✓  USERS                           5 docs
+2026-05-26 08:44:24  WARNING     ⚠  audit_log                    no data, skipping.
+2026-05-26 08:44:24  INFO        ✓  AUDIT_LOG                       0 docs
+2026-05-26 08:44:24  INFO        Subtotal mirror: 75 documents
+2026-05-26 08:44:24  INFO      ─── Step 2a: Enriched orders ───
+2026-05-26 08:44:24  INFO        ✓  enriched_orders                 5 docs
+2026-05-26 08:44:24  INFO      ─── Step 2b: Clients with history ───
+2026-05-26 08:44:24  INFO        ✓  clients_history                 5 docs
+2026-05-26 08:44:24  INFO      ─── Step 2c: Suppliers with purchases ───
+2026-05-26 08:44:24  INFO        ✓  suppliers_purchases             3 docs
+2026-05-26 08:44:24  INFO      ─── Step 3: Creating indexes ───
+2026-05-26 08:44:25  INFO        ✓  Indexes created
+2026-05-26 08:44:25  INFO      ─── Collections in motorcraft_db_mongo ───
+2026-05-26 08:44:25  INFO        clients                             5 docs
+2026-05-26 08:44:25  INFO        clients_history                     5 docs
+2026-05-26 08:44:25  INFO        employees                           5 docs
+2026-05-26 08:44:25  INFO        enriched_orders                     5 docs
+2026-05-26 08:44:25  INFO        invoices                            3 docs
+2026-05-26 08:44:25  INFO        order_details                       8 docs
+2026-05-26 08:44:25  INFO        parts_inventory                     5 docs
+2026-05-26 08:44:25  INFO        payments                            2 docs
+2026-05-26 08:44:25  INFO        payroll                             5 docs
+2026-05-26 08:44:25  INFO        positions                           5 docs
+2026-05-26 08:44:25  INFO        purchase_details                    6 docs
+2026-05-26 08:44:25  INFO        purchases                           3 docs
+2026-05-26 08:44:25  INFO        repair_logs                         2 docs
+2026-05-26 08:44:25  INFO        roles                               4 docs
+2026-05-26 08:44:25  INFO        services                           10 docs
+2026-05-26 08:44:25  INFO        suppliers                           3 docs
+2026-05-26 08:44:25  INFO        suppliers_purchases                 3 docs
+2026-05-26 08:44:25  INFO        users                               5 docs
+2026-05-26 08:44:25  INFO        vehicles                            6 docs
+2026-05-26 08:44:25  INFO        work_orders                         5 docs
+2026-05-26 08:44:25  INFO        ────────────────────────────────────────────
+2026-05-26 08:44:25  INFO        Total: 95 documents in 20 collections
+2026-05-26 08:44:25  INFO      ══════════════════════════════════════════════════
+2026-05-26 08:44:25  INFO        Completed in 0.85 seconds
+2026-05-26 08:44:25  INFO      ══════════════════════════════════════════════════
